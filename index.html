@@ -12,11 +12,11 @@
 <body>
 
     <div class="wa-container"> <!--Weather app-->
-        <header>
+        <header class="wa-header">
             <input type="text" autocomplete="off" class="search-box"
             placeholder="Search for a city...">
         </header>
-        <main>
+        <div class="wa-display">
             <section class="location">
                 <div class="city"></div>
                 <div class="date"></div>
@@ -26,8 +26,10 @@
                 <div class="temp"><span></span></div>
                 <div class="weather"></div>
             </div>
-        </main>
+        </div>
     </div>
+
+    <script src="./javascript/weather.js"></script>
     
 </body>
 </html>
