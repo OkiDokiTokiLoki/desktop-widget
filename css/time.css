@@ -1,0 +1,20 @@
+/* Resets*/
+:root{
+    --light: hsl(0, 0%, 91%);
+    --dark: hsl(0, 0%, 20%);
+    --purple: hsl(234, 98%, 62%);
+    --orange: hsl(22, 100%, 45%);
+    --green: hsl(118, 87%, 38%);
+}
+
+.time-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Monsterrat', sans-serif;
+    outline: none;
+}
