@@ -20,7 +20,7 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
-    document.body.style.background = 'url(../media/img/bg.jpeg)';
+    // document.body.style.background = 'url(../media/img/bg.jpeg)';
 
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
