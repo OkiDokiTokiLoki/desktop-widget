@@ -5,6 +5,9 @@
     --purple: hsl(234, 98%, 62%);
     --orange: hsl(22, 100%, 45%);
     --green: hsl(118, 87%, 38%);
+    --shadow-05: hsla(0, 0%, 100%, 0.05);
+    --shadow-03: hsla(0, 0%, 100%, 0.03);
+    --border: hsl(0, 0%, 50%);
 }
 
 .time-container{
@@ -29,12 +32,12 @@
     align-items: center;
     background: url(../media/img/clock.png);
     background-size: cover;
-    border: 4px solid hsl(0, 0%, 50%);
+    border: 4px solid var(--border);
     border-radius: 50%;
-    box-shadow: 0 -15px 15px hsla(0, 0%, 100%, 0.05),
-                inset 0 -15px 15px hsla(0, 0%, 100%, 0.05),
-                0 15px 15px hsla(0, 0%, 100%, 0.03),
-                inset 0 15px 15px hsla(0, 0%, 100%, 0.03);
+    box-shadow: 0 -15px 15px var(--shadow-05),
+                inset 0 -15px 15px var(--shadow-05),
+                0 15px 15px var(--shadow-03),
+                inset 0 15px 15px var(--shadow-03);
 }
 
 /* The white dot in the middle*/
@@ -43,7 +46,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background: hsl(0, 0%, 59%);
+    background: var(--border);
     border-radius: 50%;
     z-index: 50;
 }
@@ -122,7 +125,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: hsl(0, 0%, 91%);
+    color: var(--light);
     position: absolute;
     bottom: 2%;
     left: 50%;
