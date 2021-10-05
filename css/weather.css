@@ -3,12 +3,10 @@
 :root{
     --light: hsl(0, 0%, 91%);
     --dark: hsl(0, 0%, 20%);
-    --purple: hsl(234, 98%, 62%);
-    --orange: hsl(22, 100%, 45%);
-    --green: hsl(118, 87%, 38%);
+    --border: hsl(0, 0%, 50%);
+
     --shadow-05: hsla(0, 0%, 100%, 0.05);
     --shadow-03: hsla(0, 0%, 100%, 0.03);
-    --border: hsl(0, 0%, 50%);
 
     --black-03: hsla(0, 0%, 0%, 0.3);
     --black-04: hsla(0, 0%, 0%, 0.4);
@@ -37,6 +35,20 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--light);
 }
 
 .wa-header{
