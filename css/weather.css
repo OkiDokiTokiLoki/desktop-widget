@@ -30,11 +30,17 @@ body{
     background-repeat: no-repeat;
 }
 
+.content{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .wa-container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
 }
 
 button{
@@ -64,7 +70,7 @@ button:hover{
     padding: 5px 10px;
     border: none;
     outline: none;
-    background-color: hsla(0, 0%, 96%, 0.5);
+    background-color: hsla(0, 0%, 96%, 0.7);
     border-radius: 4px;
     color: hsl(0, 0%, 13%);
     font-size: 2rem;
