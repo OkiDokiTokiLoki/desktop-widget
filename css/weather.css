@@ -45,7 +45,7 @@ body{
 
 button{
     background-color: transparent;
-    border: none;
+    border: 2px solid red;
     outline: none;
     height: 50px;
     font-size: 2rem;
@@ -61,7 +61,6 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
 }
 
 .wa-header input{
