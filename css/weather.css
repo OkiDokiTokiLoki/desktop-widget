@@ -34,7 +34,7 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -43,19 +43,7 @@ body{
     flex-direction: column;
 }
 
-button{
-    background-color: transparent;
-    border: 2px solid red;
-    outline: none;
-    height: 50px;
-    font-size: 2rem;
-    transition: all 300ms ease-in-out;
-    cursor: pointer;
-}
 
-button:hover{
-    background-color: var(--light);
-}
 
 .wa-header{
     display: flex;
@@ -67,7 +55,7 @@ button:hover{
     width: 100%;
     max-width: 300px;
     padding: 5px 10px;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     background-color: hsla(0, 0%, 96%, 0.7);
     border-radius: 4px;
@@ -83,7 +71,10 @@ button:hover{
 }
 
 .wa-header input:hover{
-    background-color: hsla(0, 0%, 100%, 0.6);
+    border: 2px solid var(--border);
+    outline: none;
+    color: var(--dark);
+    background: var(--light);
 }
 
 .wa-header input:focus{
