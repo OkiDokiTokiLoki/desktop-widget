@@ -38,7 +38,8 @@ body{
     background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
 }
 
-button{
+button,
+.app-btn{
     background-color: hsla(0, 0%, 0%, 0.04);
     outline: none;
     border: none;
@@ -50,7 +51,8 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover,
+.app-btn{
     background-color: var(--light);
     color: var(--dark);
 }

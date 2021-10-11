@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/calculator.css">
+
+    <title>Simple calculator</title>
+</head>
+<body>
+
+    <h1 style="font-size: 2.5em;">Simple Calculator</h1>
+    <a href="../index.html" class="back-btn">back</a>
+
+    <div class="calculator">
+        <form name="form">
+            <input class="calculator-screen" name="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="calc-btn" title="Clear the screen" type="button" value="C" onclick="wipe()"></td>
+                <td><input class="calc-btn" title="Backspace" type="button" value="<" onclick="backspace()"></td>
+                <td><input class="calc-btn" type="button" title="Divide" value="/" onclick="insert('/')"></td>
+                <td><input class="calc-btn" type="button" title="Multiply" value="x" onclick="insert('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="calc-btn" type="button" value="7" onclick="insert(7)"></td>
+                <td><input class="calc-btn" type="button" value="8" onclick="insert(8)"></td>
+                <td><input class="calc-btn" type="button" value="9" onclick="insert(9)"></td>
+                <td><input class="calc-btn" type="button" title="Subtract" value="-" onclick="insert('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="calc-btn" type="button" value="4" onclick="insert(4)"></td>
+                <td><input class="calc-btn" type="button" value="5" onclick="insert(5)"></td>
+                <td><input class="calc-btn" type="button" value="6" onclick="insert(6)"></td>
+                <td><input class="calc-btn" type="button" title="Add" value="+" onclick="insert('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="calc-btn" type="button" value="1" onclick="insert(1)"></td>
+                <td><input class="calc-btn" type="button" value="2" onclick="insert(2)"></td>
+                <td><input class="calc-btn" type="button" value="3" onclick="insert(3)"></td>
+                <td rowspan="5"><input class="calc-btn" title="Equals" style="height: 206px;" type="button" value="=" onclick="equals()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="calc-btn" style="width: 206px;" type="button" value="0" onclick="insert(0)"></td>
+                <td><input class="calc-btn" id="decimal" title="Decimal, still working on limiting to 1 press only" type="button" value="." onclick="insert('.')"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
