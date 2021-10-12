@@ -38,21 +38,37 @@ body{
     background-image: linear-gradient(to bottom, var(--black-03), var(--black-06));
 }
 
-button{
-    background-color: hsla(0, 0%, 0%, 0.04);
-    outline: none;
+.reload-btn{
+    position: relative;
+    isolation: isolate;
     border: none;
     height: 50px;
     width: 100%;
-    color: transparent;
+    background-color: hsla(0, 0%, 0%, 0.04);
     font-size: 1.5rem;
-    transition: all 300ms ease-in-out;
+    color:transparent;
+    transition: all 350ms linear;
     cursor: pointer;
 }
 
-button:hover{
-    background-color: var(--light);
+.reload-btn:hover,
+.reload-btn:focus{
     color: var(--dark);
+}
+
+.reload-btn::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--light);
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform 350ms ease;
+}
+
+.reload-btn:hover::after{
+    transform: scale(1, 1);
 }
 
 /* .app-btn{
