@@ -56,7 +56,7 @@
     width: 120px;
     padding: 30px;
     border-radius: 50%;
-    transition: 400ms;
+    transition: 300ms;
 }
 
 .mood button:nth-child(1) {
