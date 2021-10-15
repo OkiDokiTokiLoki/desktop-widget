@@ -24,15 +24,46 @@ play.addEventListener("click", function() {
     checkPlaying(song);
 });
 
+const restartSong = song =>{
+    let currentTime = song.currentTime;
+    song.currentTime = 0;
+}
+
+// Countdown timer
+timeSelect.forEach(option => {
+    option.addEventListener("click", function() {
+      someDuration = this.getAttribute("data-time");
+      timeDisplay.textContent = `${Math.floor(someDuration / 60)}:${Math.floor(someDuration % 60)}0`;
+    });
+});
+
 // Play/Pause function
 const checkPlaying = song => {
     if (song.paused) {
       song.play();
       video.play();
-      play.src = "./img/pause.svg";
+      play.src = "../media/img/relax-img/play.svg";
     } else {
       song.pause();
       video.pause();
-      play.src = "./img/play.svg";
+      play.src = "../media/img/relax-img/pause.svg";
+    }
+};
+
+// Animation of progress bar
+song.ontimeupdate = function() {
+    let currentTime = song.currentTime;
+    let elapsed = someDuration - currentTime;
+    let seconds = Math.floor(elapsed % 60);
+    let minutes = Math.floor(elapsed / 60);
+    timeDisplay.textContent = `${minutes}:${seconds}`;
+    let progress = outlineLength - (currentTime / someDuration) * outlineLength;
+    outline.style.strokeDashoffset = progress;
+  
+    if (currentTime >= someDuration) {
+      song.pause();
+      song.currentTime = 0;
+      play.src = "../media/img/relax-img/play.svg";
+      video.pause();
     }
 };
