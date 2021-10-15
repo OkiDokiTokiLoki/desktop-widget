@@ -1,0 +1,9 @@
+const song = document.querySelector(".audio");  
+const play = document.querySelector(".play");  // Play button
+const outline = document.querySelector(".moving-outline circle");  // Progress bar
+const video = document.querySelector(".vid-container video");
+const sounds = document.querySelectorAll(".mood button");
+const timeDisplay = document.querySelector(".display");
+const outlineLength = outline.getTotalLength();  // Refering to the outline of the progress bar
+const timeSelect = document.querySelectorAll(".timer button");
+let someDuration = 600;  // The duration is not based on the duration of each song but rather one being set by us as a standard
