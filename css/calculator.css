@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 :root{
     --light: hsl(0, 0%, 91%);
     --dark: hsl(0, 0%, 20%);
@@ -20,6 +22,7 @@ body{
     justify-content: center;
     background-image: linear-gradient(to bottom, var(--blue), var(--dark));
     height: 100vh;
+    font-family: "Poppins", sans-serif;
     color: var(--light);
 }
 
