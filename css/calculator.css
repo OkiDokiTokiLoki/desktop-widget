@@ -5,6 +5,14 @@
     --blue: hsl(200, 18%, 46%);
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -12,7 +20,6 @@ body{
     justify-content: center;
     background-image: linear-gradient(to bottom, var(--blue), var(--dark));
     height: 100vh;
-    font-family: 'Monsterrat', sans-serif;
     color: var(--light);
 }
 
