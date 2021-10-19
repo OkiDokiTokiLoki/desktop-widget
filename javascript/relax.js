@@ -67,3 +67,5 @@ song.ontimeupdate = function() {
       video.pause();
     }
 };
+
+// remove interface elements to view the video while relaxing

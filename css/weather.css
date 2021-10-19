@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root{
     --light: hsl(0, 0%, 91%);
@@ -24,7 +24,7 @@
 }
 
 body{
-    font-family: 'Monsterrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: url(../media/img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,6 +104,7 @@ body{
     outline: none;
     background-color: hsla(0, 0%, 96%, 0.7);
     border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
     color: hsl(0, 0%, 13%);
     font-size: 2rem;
     transition: 0.2s ease-out;
