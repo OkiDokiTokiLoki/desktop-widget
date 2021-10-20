@@ -42,11 +42,20 @@ const checkPlaying = song => {
     if (song.paused) {
       song.play();
       video.play();
-      play.src = "../media/img/relax-img/play.svg";
+      play.src = "../media/img/relax-img/pause.svg";
+
+      // setTimeout(function() {
+      //   const timer = document.querySelectorAll('.timer-btn');
+      //   timer.style.visibility = 'hidden';
+      // }, 1500);
+
+      // setTimeout(function(){ 
+      //   alert("Hello"); 
+      // }, 3000);
     } else {
       song.pause();
       video.pause();
-      play.src = "../media/img/relax-img/pause.svg";
+      play.src = "../media/img/relax-img/play.svg";
     }
 };
 
@@ -67,5 +76,11 @@ song.ontimeupdate = function() {
       video.pause();
     }
 };
+
+
+function fade(){
+  const timer = document.querySelectorAll('.timer-btn');
+  timer.style.visibility = 'hidden';
+}
 
 // remove interface elements to view the video while relaxing
