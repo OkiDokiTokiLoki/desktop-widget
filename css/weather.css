@@ -151,7 +151,6 @@ body{
 .current{
     text-shadow: 0 3px var(--black-04);
     font-size: 3rem;
-    font-weight: 600;
 }
 
 .current .temp{
