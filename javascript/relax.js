@@ -48,7 +48,7 @@ const checkPlaying = song => {
 
       setTimeout(function() {
         fade.addClass('hidden');
-      }, 1500);
+      }, 1000);
 
     } else {
       song.pause();
@@ -57,7 +57,7 @@ const checkPlaying = song => {
 
       setTimeout(function() {
         fade.removeClass('hidden');
-      }, 500);
+      }, 300);
     }
 };
 
