@@ -8,6 +8,8 @@ const outlineLength = outline.getTotalLength();  // Refering to the outline of t
 const timeSelect = document.querySelectorAll(".timer button");
 let someDuration = 600;  // The duration is not based on the duration of each song but rather one being set by us as a standard
 
+const fade = $('.fade');
+
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
 timeDisplay.textContent = `${Math.floor(someDuration / 60)}:${Math.floor(someDuration % 60)}0`;
@@ -44,18 +46,18 @@ const checkPlaying = song => {
       video.play();
       play.src = "../media/img/relax-img/pause.svg";
 
-      // setTimeout(function() {
-      //   const timer = document.querySelectorAll('.timer-btn');
-      //   timer.style.visibility = 'hidden';
-      // }, 1500);
+      setTimeout(function() {
+        fade.addClass('hidden');
+      }, 1500);
 
-      // setTimeout(function(){ 
-      //   alert("Hello"); 
-      // }, 3000);
     } else {
       song.pause();
       video.pause();
       play.src = "../media/img/relax-img/play.svg";
+
+      setTimeout(function() {
+        fade.removeClass('hidden');
+      }, 500);
     }
 };
 
@@ -76,11 +78,3 @@ song.ontimeupdate = function() {
       video.pause();
     }
 };
-
-
-function fade(){
-  const timer = document.querySelectorAll('.timer-btn');
-  timer.style.visibility = 'hidden';
-}
-
-// remove interface elements to view the video while relaxing
