@@ -109,11 +109,6 @@ body{
     font-size: 2rem;
     transition: 0.4s ease-in-out;
     text-transform: capitalize;
-
-    box-shadow: 0 0 10px var(--shadow-05),
-                inset 0 -10px 10px var(--shadow-05),
-                0 10px 10px var(--shadow-03),
-                inset 0 10px 10px var(--shadow-03);
 }
 
 .wa-header input:hover{
@@ -161,4 +156,11 @@ body{
 .current .weather{
     color: hsl(0, 0%, 100%);
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    
+    .wa-header input{
+        background-color: hsl(0, 0%, 100%);
+    }
 }

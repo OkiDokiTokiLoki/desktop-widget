@@ -168,7 +168,6 @@ video {
     
     h1{
         padding: 0 10px;
-        background-color: lightcoral;
     }
     
     .timer {
@@ -184,8 +183,8 @@ video {
     }
 
     .mood button{
-        width: 50px;
-        height: 50px;
-        padding: 10px;
+        width: 75px;
+        height: 75px;
+        padding: 15px;
     }
   }

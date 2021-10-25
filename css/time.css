@@ -161,3 +161,18 @@
     margin-top: 3px;
     text-shadow: 1px 2px hsla(0, 0%, 0%, 0.5);
 }
+
+/* media queries*/
+@media screen and (max-width: 650px) {
+    .digi_clock .times{
+        width: 120px;
+    }
+
+    .digi_clock .times .time{
+        font-size: 4rem;
+    }
+
+    #digi_seconds{
+        font-size: 2rem;
+    }
+}

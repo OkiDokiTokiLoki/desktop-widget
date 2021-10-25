@@ -18,6 +18,7 @@ function getResults(query) {
 
 function displayResults(weather) {
     document.body.style.background = 'white'; //'url(../media/img/bg.jpeg)';
+    
     let ana_clock = document.querySelector('.ana_clock');
     ana_clock.style.visibility = 'hidden';
 
