@@ -126,12 +126,11 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
 /* containers of time elements*/
 .digi_clock .times{
-    width: 200px;
+    width: 160px;
     height: 250px;
     position: relative;
     margin: 5px 2px;

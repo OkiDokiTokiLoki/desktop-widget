@@ -10,6 +10,8 @@ let someDuration = 600;  // The duration is not based on the duration of each so
 
 const fade = $('.fade');
 
+const abc = document.querySelector('.ra-container');
+
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
 timeDisplay.textContent = `${Math.floor(someDuration / 60)}:${Math.floor(someDuration % 60)}0`;
