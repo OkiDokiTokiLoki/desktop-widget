@@ -175,16 +175,12 @@ video {
     }
 
     .timer button{
-        width: 80%;
-    }
-
-    video{
-        height: 100%;
+        width: 70%;
     }
 
     .mood button{
         width: 75px;
         height: 75px;
-        padding: 15px;
+        padding: 20px;
     }
   }

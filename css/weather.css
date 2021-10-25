@@ -163,4 +163,13 @@ body{
     .wa-header input{
         background-color: hsl(0, 0%, 100%);
     }
+
+    .wa-display{
+        padding: 25px;
+    }
+
+    .location .city,
+    .location .date{
+        font-size: 2rem;
+    }
 }
