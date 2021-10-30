@@ -1,5 +1,5 @@
 const song = document.querySelector(".audio");  
-const play = document.querySelector(".play");  // Play button
+const play = document.querySelector(".play"); 
 const outline = document.querySelector(".moving-outline circle");  // Progress bar
 const video = document.querySelector(".vid-container video");
 const sounds = document.querySelectorAll(".mood button");
