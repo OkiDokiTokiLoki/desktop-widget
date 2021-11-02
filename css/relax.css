@@ -31,7 +31,7 @@
 }
 
 .ra-nav{
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .ra-nav h1{
@@ -41,7 +41,7 @@
 
 .timer,
 .mood {
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -49,54 +49,22 @@
 }
 
 .timer button{
-    color: white;
-    background: none;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    outline: none;
-}
-
-.mood button {
-    border: none;
-    height: 120px;
-    width: 120px;
-    padding: 30px;
-    border-radius: 50%;
-    transition: 300ms;
-    margin-bottom: 120px;
-    cursor: pointer;
-}
-
-.mood button:nth-child(1) {
-    background: var(--cool-1);
-}
-.mood button:nth-child(1):hover {
-    background: var(--cool-2);
-}
-.mood button:nth-child(2) {
-    background: var(--warm-1);
-}
-.mood button:nth-child(2):hover {
-    background: var(--warm-2);
-}
-.mood button img {
-    height: 100%;
-}
-
-.timer button{
     position: relative;
     isolation: isolate;
-    border: none;
     height: 50px;
     width: 200px;
 
     background-color: hsla(0, 0%, 0%, 0.04);
     font-size: 1.5rem;
     line-height: inherit;
-    transition: all 350ms linear;
 
     border: 2px solid white;
     border-radius: 5px;
+
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
 }
 
 .timer button::after{
@@ -162,6 +130,32 @@ video {
     left: 0%;
     width: 100%;
     z-index: -10;
+}
+
+.mood button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.mood button:nth-child(1) {
+    background: var(--cool-1);
+}
+.mood button:nth-child(1):hover {
+    background: var(--cool-2);
+}
+.mood button:nth-child(2) {
+    background: var(--warm-1);
+}
+.mood button:nth-child(2):hover {
+    background: var(--warm-2);
+}
+.mood button img {
+    height: 100%;
 }
 
 @media screen and (max-width: 650px) {
