@@ -164,6 +164,43 @@
 
 /* media queries*/
 @media screen and (max-width: 650px) {
+    .ana_clock{
+        top: 40%;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* hour-hand*/
+    .ana_clock .ana_hour, 
+    .ana_hr{
+        height: 80px;
+    }
+
+    .ana_hr:before{
+        width: 6px;
+        height: 40px;
+    }
+
+    /* minute-hand*/
+    .ana_clock .ana_minute, 
+    .ana_mm{
+        height: 100px;
+    }
+
+    .ana_mm:before{
+        height: 50px;
+    }
+
+    /* second-hand*/
+    .ana_clock .ana_second, 
+    .ana_ss{
+        height: 80px;
+    }
+
+    .ana_ss:before{
+        height: 60px;
+    }
+    
     .digi_clock .times{
         width: 120px;
     }
