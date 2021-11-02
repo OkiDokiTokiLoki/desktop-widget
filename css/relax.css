@@ -30,8 +30,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-.ra-container h1{
-    margin-top: 59px;
+.ra-nav{
+    margin-top: 80px;
+}
+
+.ra-nav h1{
     color: white;
     font-size: 2.5rem;
 }
@@ -45,16 +48,10 @@
     flex: 1;
 }
 
-.timer button,
-.mood button {
+.timer button{
     color: white;
-    width: 200px;
-    height: 75px;
     background: none;
-    font-size: 28px;
-    border-radius: 5px;
     cursor: pointer;
-    border: 2px solid white;
     transition: all 0.5s ease;
     outline: none;
 }
@@ -67,24 +64,21 @@
     border-radius: 50%;
     transition: 300ms;
     margin-bottom: 120px;
+    cursor: pointer;
 }
 
 .mood button:nth-child(1) {
     background: var(--cool-1);
 }
-
 .mood button:nth-child(1):hover {
     background: var(--cool-2);
 }
-
 .mood button:nth-child(2) {
     background: var(--warm-1);
 }
-
 .mood button:nth-child(2):hover {
     background: var(--warm-2);
 }
-
 .mood button img {
     height: 100%;
 }
@@ -94,15 +88,15 @@
     isolation: isolate;
     border: none;
     height: 50px;
+    width: 200px;
 
     background-color: hsla(0, 0%, 0%, 0.04);
     font-size: 1.5rem;
     line-height: inherit;
     transition: all 350ms linear;
-    cursor: pointer;
 
     border: 2px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .timer button::after{
@@ -172,8 +166,13 @@ video {
 
 @media screen and (max-width: 650px) {
     
-    h1{
+    .ra-nav{
+        margin: 20px;
+    }
+
+    .ra-nav h1{
         padding: 0 10px;
+        font-size: 1.75rem;
     }
     
     .timer {
@@ -181,7 +180,15 @@ video {
     }
 
     .timer button{
-        width: 70%;
+        width: 60%;
+    }
+
+    .player{
+        margin: 20px 0;
+    }
+
+    .mood{
+        margin-bottom: 120px;
     }
 
     .mood button{
@@ -189,4 +196,4 @@ video {
         height: 75px;
         padding: 20px;
     }
-  }
+}
