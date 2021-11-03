@@ -7,10 +7,11 @@ const timeDisplay = document.querySelector(".display");
 const outlineLength = outline.getTotalLength();  // Refering to the outline of the progress bar
 const timeSelect = document.querySelectorAll(".timer button");
 let someDuration = 600;  // The duration is not based on the duration of each song but rather one being set by us as a standard
+let volume = document.querySelector("#volume-control");
 
 const fade = $('.fade');
 
-const abc = document.querySelector('.ra-container');
+// const abc = document.querySelector('.ra-container');
 
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
@@ -80,3 +81,9 @@ song.ontimeupdate = function() {
       video.pause();
     }
 };
+
+
+// Volume control
+volume.addEventListener("change", function(e) {
+  song.volume = e.currentTarget.value / 100;
+})
