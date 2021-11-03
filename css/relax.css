@@ -93,12 +93,11 @@
     justify-content: space-evenly;
     align-items: center;
     flex: 1;
-    cursor: pointer;
 }
 
 .player svg {
     position: absolute;
-    height: 60%;
+    height: 58%;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
@@ -115,14 +114,73 @@
     left: 50%;
     transform: translate(-50%,-50%);
     height: 20%;
+    cursor: pointer;
 }
 
 .display {
     color: white;
     position: absolute;
     font-size: 55px;
+    bottom: 10%;
+}
+
+.volume{
+    position: absolute;
     bottom: 0%;
 }
+
+.volume input{
+    width: 200px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+  
+.volume input::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+
+
+
+/*
+
+
+.slider {
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+
+*/
 
 video {
     position: fixed;
