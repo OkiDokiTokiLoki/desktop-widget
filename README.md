@@ -1,7 +1,5 @@
 <h3>desktop widget</h3>
 
-[Live demo](https://okidokitokiloki.github.io/desktop-widget/)
-
 ## General info
 <strong>This is a wip.</strong> A small program that displays time, weather, and other info.
 
@@ -21,3 +19,7 @@ Project is created with:
 
 * JQuery 3.6.0
 * OpenWeatherMap
+
+
+## Extra notes
+* The live demo was removed and due to security, the weather functionality is temporarily switched off.
