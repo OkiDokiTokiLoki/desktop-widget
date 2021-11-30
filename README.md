@@ -10,11 +10,13 @@ A small program that displays time, weather, and other info.
 * Users also have the option to relax to some sounds of nature with a timer, fade-out and volume control.
 
 ## Getting started
-The live demo doesn't showcase the weather display.   -- In order to view it, you will first have to subscribe (free) to the "Current weather data" API on [OpenWeatherMap](https://openweathermap.org/api).
+The live demo doesn't showcase the weather display.   
+
+-- In order to view it, you will first have to subscribe (free) to the "Current weather data" API on [OpenWeatherMap](https://openweathermap.org/api).
 
 -- Fork this project and create a config.js file inside of the "javascript" folder. 
 
--- In the config.js file create a new `const api` object with `key: 'YOUR_API_KEY_HERE'` and `base: 'https://api.openweathermap.org/data/2.5'` properties.
+-- In the config.js file, create a new `const api` object with `key: 'YOUR_API_KEY_HERE'` and `base: 'https://api.openweathermap.org/data/2.5'` properties.
 
 -- The config.js file is already linked in the html.
 	
@@ -25,6 +27,5 @@ Project is created with:
 * HTML
 * CSS
 * JavaScript
-
 * JQuery 3.6.0
 * OpenWeatherMap
